@@ -32,7 +32,6 @@ def get_next_page(soup: BeautifulSoup) -> str | None:
 
 def get_animal_amount() -> list[tuple[str, int]]:
     next_page = BASE_URL + START_URL
-    syl = 'А'
     syl_dict = {}
 
     while next_page:
