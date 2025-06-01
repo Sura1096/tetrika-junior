@@ -3,7 +3,7 @@ from unittest.mock import patch, Mock
 
 from bs4 import BeautifulSoup
 
-from solution import get_next_page, get_animal_amount, write_to_csv
+from tasks.task2.solution import get_next_page, get_animal_amount, write_to_csv
 from html_test_cases import (next_page_html, none_next_page_html,
                              animals_html, animals_last_html_page)
 
@@ -19,7 +19,7 @@ class TestTask2(unittest.TestCase):
         next_page = get_next_page(soup)
         assert next_page is None
 
-    @patch('solution.requests.get')
+    @patch('tasks.task2.solution.requests.get')
     def test_get_animal_amount(self, mock_get):
         mock_response1 = Mock()
         mock_response1.text = animals_html

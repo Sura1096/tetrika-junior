@@ -1,6 +1,6 @@
 import pytest
 
-from solution import sum_two
+from tasks.task1.solution import sum_two
 
 
 @pytest.mark.parametrize('a, b, expected_result', [(1, 2, 3),

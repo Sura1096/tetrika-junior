@@ -1,6 +1,6 @@
 import pytest
 
-from solution import appearance
+from tasks.task3.solution import appearance
 import test_cases
 
 
